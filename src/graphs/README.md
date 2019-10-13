@@ -1,1 +1,10 @@
-Details about the package
+
+# Graphs
+  
+|Concept/Problem|Implementation|
+|--|--|
+|||
+|||
+
+Complete Playlist
+

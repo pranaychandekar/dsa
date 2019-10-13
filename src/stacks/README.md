@@ -1,1 +1,10 @@
-Details about the package
+
+# Stacks
+  
+|Concept/Problem|Implementation|
+|--|--|
+|||
+|||
+
+Complete Playlist
+
