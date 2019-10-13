@@ -37,7 +37,9 @@ class BinarySearch:
 
         return -1
 
-    def binary_search_recursive(self, search_space: list, target: int, start: int, end: int):
+    def binary_search_recursive(
+        self, search_space: list, target: int, start: int, end: int
+    ):
         """
         This method performs a binary search on the sorted search space to find the index of the target using
         recursion technique.
@@ -77,14 +79,22 @@ if __name__ == "__main__":
 
     solution = BinarySearch()
     index_iterative = solution.binary_search_iterative(search_space, target)
-    index_recursive = solution.binary_search_recursive(search_space, target, 0, len(search_space) - 1)
+    index_recursive = solution.binary_search_recursive(
+        search_space, target, 0, len(search_space) - 1
+    )
 
     assert index_iterative == index_recursive
 
     if index_iterative == -1:
         print("\nThe target:", target, "is not present in the given search space.")
     else:
-        print("\nThe target:", target, "is present at index", index_iterative, "in the given search space.")
+        print(
+            "\nThe target:",
+            target,
+            "is present at index",
+            index_iterative,
+            "in the given search space.",
+        )
 
     toc = time.time()
 

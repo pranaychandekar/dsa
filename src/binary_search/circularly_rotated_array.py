@@ -33,7 +33,9 @@ class CircularRotatedSortedArray:
             next = (mid + 1) % search_space_size
             previous = (mid + search_space_size - 1) % search_space_size
 
-            if search_space[previous] >= search_space[mid] <= search_space[next]:  # Pivot property
+            if (
+                search_space[previous] >= search_space[mid] <= search_space[next]
+            ):  # Pivot property
                 return mid
             elif search_space[mid] <= search_space[end]:
                 end = mid - 1
