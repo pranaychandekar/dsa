@@ -49,5 +49,5 @@ if __name__ == "__main__":
     print()
 
     toc = time.time()
-    
+
     print("\nTotal time taken:", toc - tic, "seconds.")

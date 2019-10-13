@@ -20,7 +20,7 @@ class SieveOfEratosthenes:
         :rtype: list
         """
         sieve = [True] * (
-                number + 1
+            number + 1
         )  # Use boolean instead of number as bool takes less space in memory
 
         sieve[0] = sieve[1] = False  # 0 and 1 are neither prime nor composite

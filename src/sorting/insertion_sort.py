@@ -22,8 +22,8 @@ class InsertionSort:
             empty_block_original_value = unsorted_list[i]
             empty_block = i
             while (
-                    empty_block > 0
-                    and unsorted_list[empty_block - 1] > empty_block_original_value
+                empty_block > 0
+                and unsorted_list[empty_block - 1] > empty_block_original_value
             ):
                 unsorted_list[empty_block] = unsorted_list[empty_block - 1]
                 empty_block = empty_block - 1
