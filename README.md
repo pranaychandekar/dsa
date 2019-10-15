@@ -17,7 +17,7 @@ This repository currently contains the following implementations:
  8. [Graphs](https://www.youtube.com/playlist?list=PLamIler5xrPptAqpcMP_A1d-Q9cEcgkpJ)
 
 
-*Feel free to contribute to this repository by adding the components which you feel are necessary. Please read the contribution guidelines.*
+*Feel free to contribute to this repository by adding the components which you feel are necessary. Please read the contribution guidelines for the same.*
 
 ---
 Author - [Pranay Chandekar](https://www.linkedin.com/in/pranaychandekar/)
