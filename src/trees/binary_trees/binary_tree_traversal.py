@@ -34,10 +34,10 @@ class BinaryTreeTraversal:
 
             result.append(current.get_data())
 
-            if current.get_left() is not None:
+            if current.has_left():
                 queue.enqueue(current.get_left())
 
-            if current.get_right() is not None:
+            if current.has_right():
                 queue.enqueue(current.get_right())
 
     @staticmethod

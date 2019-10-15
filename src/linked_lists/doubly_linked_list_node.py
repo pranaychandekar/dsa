@@ -1,4 +1,7 @@
-class DoublyLinkedListNode:
+from linked_lists.linked_list_node import LinkedListNode
+
+
+class DoublyLinkedListNode(LinkedListNode):
     """
         This class represents a node which can be used to create a Doubly Linked List.
 
@@ -13,41 +16,8 @@ class DoublyLinkedListNode:
         :param next: The reference to the next node.
         :param previous: The reference to the previous node.
         """
-        self.data = data
-        self.next = next
+        super(LinkedListNode, self).__init__(data, next)
         self.previous = previous
-
-    def set_data(self, data):
-        """
-        This method sets the data in the Doubly Linked List node.
-
-        :param data: The data in the node.
-        """
-        self.data = data
-
-    def get_data(self):
-        """
-        This method returns the data in the Doubly Linked List node.
-
-        :return: The data in the node.
-        """
-        return self.data
-
-    def set_next(self, next):
-        """
-        This method sets the reference to the next node in the Doubly Linked List node.
-
-        :param next: The reference to the next node.
-        """
-        self.next = next
-
-    def get_next(self):
-        """
-        This method returns the reference to the next node in the Doubly Linked List node.
-
-        :return: The reference to the next node.
-        """
-        return self.next
 
     def set_previous(self, previous):
         """

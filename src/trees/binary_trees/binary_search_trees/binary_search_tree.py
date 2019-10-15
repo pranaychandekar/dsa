@@ -80,11 +80,11 @@ class BinarySearchTree(BinaryTree):
         elif current.get_data() < to_remove:
             current.set_right(self.remove(current.get_right(), to_remove))
         else:
-            if current.get_left() is None and current.get_right() is None:
+            if not current.has_left() and not current.has_right():
                 current = None
-            elif current.get_left() is None:
+            elif not current.has_left():
                 current = current.get_right()
-            elif current.get_right() is None:
+            elif not current.has_right():
                 current = current.get_left()
             else:
                 current.set_data(self.get_min(current.get_right()))
@@ -123,7 +123,7 @@ class BinarySearchTree(BinaryTree):
         :param current: The current node.
         :return: The minimum value in the BST
         """
-        while current.get_left() is not None:
+        while current.has_left():
             current = current.get_left()
         return current.get_data()
 
@@ -135,7 +135,7 @@ class BinarySearchTree(BinaryTree):
         :param current: The current node.
         :return: The maximum value in the BST
         """
-        while current.get_right() is not None:
+        while current.has_right():
             current = current.get_right()
         return current.get_data()
 
