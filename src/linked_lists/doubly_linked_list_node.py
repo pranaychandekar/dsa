@@ -34,3 +34,11 @@ class DoublyLinkedListNode(LinkedListNode):
         :return: The reference to the previous node.
         """
         return self.previous
+
+    def has_previous(self):
+        """
+        This method returns the boolean flag indicating the presence of a previous node.
+
+        :return: The boolean flag validating the presence of the previous node.
+        """
+        return self.previous is not None
