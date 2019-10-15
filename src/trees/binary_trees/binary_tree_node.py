@@ -35,6 +35,14 @@ class BinaryTreeNode:
         """
         return self.data
 
+    def has_data(self):
+        """
+        This method returns a boolean flag indicating the presence of data in the node.
+
+        :return: The boolean flag validating the presence of the data in the node.
+        """
+        return self.data is not None
+
     def set_left(self, left):
         """
         This method sets the left child of the Binary Tree node.
@@ -50,6 +58,14 @@ class BinaryTreeNode:
         :return: The reference to the left child.
         """
         return self.left
+
+    def has_left(self):
+        """
+        This method returns the boolean flag indicating the presence of a left child in the node.
+
+        :return: The boolean flag validating the presence of the left child in the node.
+        """
+        return self.left is not None
 
     def set_right(self, right):
         """
@@ -67,6 +83,14 @@ class BinaryTreeNode:
         """
         return self.right
 
+    def has_right(self):
+        """
+        This method returns the boolean flag indicating the presence of a right child in the node.
+
+        :return: The boolean flag validating the presence of the right child in the node.
+        """
+        return self.right is not None
+
     def set_parent(self, parent):
         """
         This method sets the parent of the Binary Tree node.
@@ -82,3 +106,11 @@ class BinaryTreeNode:
         :return: The reference to the parent.
         """
         return self.parent
+
+    def has_parent(self):
+        """
+        This method returns the boolean flag indicating the presence of a parent in the node.
+
+        :return: The boolean flag indicating the presence of the parent of the node.
+        """
+        return self.parent is not None

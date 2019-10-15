@@ -5,7 +5,7 @@ class LinkedListNode:
     :Authors: pranaychandekar
     """
 
-    def __init__(self, data, next=None):
+    def __init__(self, data=None, next=None):
         """
         This method initializes a node for Linked List.
 
@@ -31,6 +31,14 @@ class LinkedListNode:
         """
         return self.data
 
+    def has_data(self):
+        """
+        This method returns the boolean flag indicating the presence of data in the node.
+
+        :return: The boolean flag validating the presence of the data in the node.
+        """
+        return self.data is not None
+
     def set_next(self, next):
         """
         This method sets the reference to the next node in the Linked List node.
@@ -43,6 +51,14 @@ class LinkedListNode:
         """
         This method returns the reference to the next node in the Linked List node.
 
-        :return:The reference to the next node.
+        :return: The reference to the next node.
         """
         return self.next
+
+    def has_next(self):
+        """
+        This method returns the boolean flag indicating the presence of a next node.
+
+        :return: The boolean flag validating the presence of the next node.
+        """
+        return self.next is not None
