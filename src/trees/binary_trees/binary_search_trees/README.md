@@ -8,3 +8,5 @@
 |[Remove element from BST](https://www.youtube.com/watch?v=gcULXE7ViZw)|binary_search_tree.py|
 |[Validate a BST](https://www.youtube.com/watch?v=yEwSGhSsT0U)|binary_search_tree.py|
 |[Minimum and Maximum in BST](https://www.youtube.com/watch?v=Ut90klNN264)|binary_search_tree.py|
+
+[Complete Playlist](https://www.youtube.com/playlist?list=PLamIler5xrPpNd1PHhhny4G50Yex8jQ29)
