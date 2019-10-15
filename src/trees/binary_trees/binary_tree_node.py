@@ -1,13 +1,13 @@
 class BinaryTreeNode:
     """
-    This class represents a node which can be used to create a binary tree.
+    This class represents a node which can be used to create a Binary Tree.
 
     :Authors: pranaychandekar
     """
 
     def __init__(self, data, left=None, right=None, parent=None):
         """
-        This method initializes a node for binary tree.
+        This method initializes a node for Binary Tree.
 
         :param data: The data to be stored in the node.
         :param left: The reference to the left child.
@@ -21,7 +21,7 @@ class BinaryTreeNode:
 
     def set_data(self, data):
         """
-        This method sets the data in the binary tree node.
+        This method sets the data in the Binary Tree node.
 
         :param data: The data in the node.
         """
@@ -29,7 +29,7 @@ class BinaryTreeNode:
 
     def get_data(self):
         """
-        This method returns the data in the binary tree node.
+        This method returns the data in the Binary Tree node.
 
         :return: The data in the node.
         """
@@ -37,7 +37,7 @@ class BinaryTreeNode:
 
     def set_left(self, left):
         """
-        This method sets the left child of the binary tree node.
+        This method sets the left child of the Binary Tree node.
 
         :param left: The reference to the left child.
         """
@@ -45,7 +45,7 @@ class BinaryTreeNode:
 
     def get_left(self):
         """
-        This method returns the left child of the binary tree node.
+        This method returns the left child of the Binary Tree node.
 
         :return: The reference to the left child.
         """
@@ -53,7 +53,7 @@ class BinaryTreeNode:
 
     def set_right(self, right):
         """
-        This method sets the right child of the binary tree node.
+        This method sets the right child of the Binary Tree node.
 
         :param right: The reference to the right child.
         """
@@ -61,7 +61,7 @@ class BinaryTreeNode:
 
     def get_right(self):
         """
-        This method returns the right child of the binary tree node.
+        This method returns the right child of the Binary Tree node.
 
         :return: The reference to the right child.
         """
@@ -69,7 +69,7 @@ class BinaryTreeNode:
 
     def set_parent(self, parent):
         """
-        This method sets the parent of the binary tree node.
+        This method sets the parent of the Binary Tree node.
 
         :param parent: The reference to the parent.
         """
@@ -77,7 +77,7 @@ class BinaryTreeNode:
 
     def get_parent(self):
         """
-        This method returns the parent of the binary tree node.
+        This method returns the parent of the Binary Tree node.
 
         :return: The reference to the parent.
         """

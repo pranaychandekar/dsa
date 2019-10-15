@@ -1,6 +1,7 @@
 import time
 
 from trees.binary_trees.binary_tree_node import BinaryTreeNode
+from queues.queues import Queues
 
 
 class BinaryTreeTraversal:
@@ -19,12 +20,25 @@ class BinaryTreeTraversal:
         """
         This method implements the Breadth First - Level Order Traversal of a Binary Tree.
 
-        todo - Implement this logic after queue implementation
-
         :param current: The current node in the tree.
         :param result: The list to collect the result of the traversal.
         """
-        pass
+        if current is None:
+            return
+
+        queue = Queues()
+        queue.enqueue(current)
+
+        while not queue.is_empty():
+            current = queue.de_queue()
+
+            result.append(current.get_data())
+
+            if current.get_left() is not None:
+                queue.enqueue(current.get_left())
+
+            if current.get_right() is not None:
+                queue.enqueue(current.get_right())
 
     @staticmethod
     def pre_order(current: BinaryTreeNode, result: list):
@@ -84,6 +98,10 @@ if __name__ == "__main__":
     bst.set_root(bst.insert(bst.get_root(), 9))
     bst.set_root(bst.insert(bst.get_root(), 3))
     bst.set_root(bst.insert(bst.get_root(), 21))
+
+    result = list()
+    BinaryTreeTraversal.level_order(bst.get_root(), result)
+    print("\nLevel order Traversal", result)
 
     result = list()
     BinaryTreeTraversal.pre_order(bst.get_root(), result)
